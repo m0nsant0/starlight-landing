@@ -1,3 +1,4 @@
+@'
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
 </head>
 <body>
   <section id="hero" class="full-screen">
-    <div id="bg-static" style="background:url('Tiamat-2.png') center/cover no-repeat;"></div>
+    <div id="bg-static" style="background:url('Tiamat-2.png') center/cover no-fixed;"></div>
     <div class="overlay"></div>
     <div class="hero-content">
       <h1 class="glitch" data-text="Enūma Eliš: Fire & Blood">Enūma Eliš: Fire & Blood</h1>
@@ -23,30 +24,31 @@
     <div class="container cols">
       <div class="text">
         <h2>The Story</h2>
-        <p>On a dying world bound to the twin stars Takbiru and Takmat, three species struggle for survival as the planet fractures under cosmic and political pressure. The Tears of Tiamat—crystalline blood drawn from the planet’s volcanic wounds—power cities, fuel wars, and awaken ancient prophecies. When a Vektor-3 cylinder vanishes inside the Fangs of Zarakh, a chain of conspiracies erupts: rebellions ignite, scientists are assassinated, and the Kal-Muzar spirals toward collapse.</p>
-        <p>Hether Eorahk, a hybrid geneticist, wagers everything by creating The Seven—engineered children capable of deciphering the planet’s fate—while Eliok Ekzra confronts the corruption rising within his own Council. In the shadows, Kendar Akdar, a Zar’Uk mathematician and architect of hidden chaos, bends every catastrophe toward a new order only he can control.</p>
-        <p>Between science, prophecy, and treachery, the fate of Tiamat unfolds in a world where saving life demands sacrificing it, and where truth bleeds deeper than the stone that guards it.</p>
+        <p>On a collapsing planet orbiting two unstable suns, three rival civilizations fight to survive as their world breaks apart under environmental collapse and political decay. Tiamat is powered by a rare crystalline resource—known as the Tears of Tiamat—formed deep within volcanic fractures. These crystals sustain cities and technology, but their extraction fuels oppression, war, and religious conflict.</p>
+        <p>When a highly sensitive scientific device disappears inside a forbidden volcanic region, the event triggers a chain reaction: rebellions spread, key scientists are murdered, and the planet’s governing council begins to fracture from within. What appears to be a crisis of resources quickly reveals itself as a struggle over knowledge, power, and control of the future.</p>
+        <p>At the center of the turmoil, a geneticist risks everything by creating seven engineered children, designed to solve the planet’s existential crisis at any cost. A veteran statesman attempts to hold the fragile political order together, even as corruption reaches the highest levels of authority. Behind both efforts, a brilliant mathematician manipulates disasters and ideologies alike, steering every catastrophe toward a new, tightly controlled world order.</p>
+        <p>Caught between science and prophecy, survival and morality, Tiamat becomes a world where saving civilization may require unforgivable sacrifices—and where the most dangerous truth is not written in scripture, but calculated in silence.</p>
       </div>
       <div class="cover">
-        <img src="book cover-title.png" alt="Enūma Eliš: Fire & Blood cover">
+        <img src="book-cover-title.png" alt="Enūma Eliš: Fire & Blood cover">
       </div>
     </div>
   </section>
 
-  <section id="kendar" class="section">
+  <section id="gallery" class="section">
+    <h2>Visions of Tiamat</h2>
+    <div class="gallery-grid">
+      <img src="akkad-piramides.jpg" alt="Akkad mines">
+    </div>
+  </section>
+
+  <section id="kendar" class="section dark">
     <h2>Kendar Akdar Speaks</h2>
     <div class="video-wrapper">
       <video controls playsinline>
         <source src="kendar-hakdar-video.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-    </div>
-  </section>
-
-  <section id="gallery" class="section dark">
-    <h2>Visions of Tiamat</h2>
-    <div class="gallery-grid">
-      <img src="akkad-piramides.jpg" alt="Akkad mines">
     </div>
   </section>
 
@@ -85,3 +87,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+'@ | Out-File -FilePath index.html -Encoding utf8 -Force
