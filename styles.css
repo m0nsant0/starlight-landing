@@ -34,11 +34,11 @@ cite{display:block;margin-top:.5rem;font-style:normal;font-weight:500;opacity:.7
 footer{padding:2rem;text-align:center;font-size:.9rem;opacity:.6}
 footer a{color:#e5e9f0;text-decoration:none;border-bottom:1px solid}
 
-/* Galería, video ancho real más pequeño, audio */
+/* Galería, video proporción real, más pequeño, título centrado */
 .gallery-grid{display:grid;gap:2rem;justify-items:center;margin-top:2rem}
 .gallery-grid img{border-radius:4px;box-shadow:0 0 30px #00fff966;max-width:600px}
 #kendar h2{margin-bottom:2rem}
-.video-wrapper{position:relative;margin:0 auto;max-width:400px;width:100%;padding-bottom:75%;height:0;overflow:hidden}
-.video-wrapper video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.video-wrapper{position:relative;margin:0 auto;max-width:500px;width:auto;padding-bottom:75%;height:0;overflow:hidden}
+.video-wrapper video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain;object-position:50% 50%}
 audio{margin-top:1rem;width:100%;max-width:500px}
 '@ | Out-File -FilePath styles.css -Encoding utf8 -Force
