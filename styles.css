@@ -24,6 +24,7 @@ h1{font-family:'Orbitron',sans-serif;font-size:clamp(3rem,8vw,7rem);letter-spaci
 .cols{display:grid;gap:3rem;align-items:center;text-align:left}
 @media(min-width:900px){.cols{grid-template-columns:1fr 1fr}}
 h2{font-family:'Orbitron',sans-serif;font-size:2rem;margin-bottom:1.5rem;text-transform:uppercase;letter-spacing:.05em}
+.cover{max-width:80%;margin:0 auto} /* 20% más pequeño */
 .cover img{border-radius:4px;box-shadow:0 0 40px #00fff944}
 .quotes{display:grid;gap:2rem;margin-top:2rem}
 blockquote{font-style:italic;font-size:1.1rem;border-left:3px solid #00fff9;padding-left:1rem}
@@ -34,11 +35,11 @@ cite{display:block;margin-top:.5rem;font-style:normal;font-weight:500;opacity:.7
 footer{padding:2rem;text-align:center;font-size:.9rem;opacity:.6}
 footer a{color:#e5e9f0;text-decoration:none;border-bottom:1px solid}
 
-/* Galería, video natural, más pequeño, título centrado */
+/* Galería, video, audio */
 .gallery-grid{display:grid;gap:2rem;justify-items:center;margin-top:2rem}
 .gallery-grid img{border-radius:4px;box-shadow:0 0 30px #00fff966;max-width:600px}
 #kendar h2{margin-bottom:1.5rem}
-.video-wrapper{position:relative;margin:0 auto;max-width:360px;width:100%}
-.video-wrapper video{width:100%;height:auto;display:block}
+.video-wrapper{position:relative;margin:0 auto;max-width:500px;width:auto}
+.video-wrapper video{display:block;width:100%;height:auto}
 audio{margin-top:1rem;width:100%;max-width:500px}
 '@ | Out-File -FilePath styles.css -Encoding utf8 -Force
