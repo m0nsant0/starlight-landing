@@ -24,8 +24,7 @@ h1{font-family:'Orbitron',sans-serif;font-size:clamp(3rem,8vw,7rem);letter-spaci
 .cols{display:grid;gap:3rem;align-items:center;text-align:left}
 @media(min-width:900px){.cols{grid-template-columns:1fr 1fr}}
 h2{font-family:'Orbitron',sans-serif;font-size:2rem;margin-bottom:1.5rem;text-transform:uppercase;letter-spacing:.05em}
-.cover{max-width:80%;margin:0 auto} /* 20% más pequeño */
-.cover img{border-radius:4px;box-shadow:0 0 40px #00fff944}
+.cover img{max-width:80%;margin:0 auto;display:block;border-radius:4px;box-shadow:0 0 40px #00fff944}
 .quotes{display:grid;gap:2rem;margin-top:2rem}
 blockquote{font-style:italic;font-size:1.1rem;border-left:3px solid #00fff9;padding-left:1rem}
 cite{display:block;margin-top:.5rem;font-style:normal;font-weight:500;opacity:.7}
